@@ -1,0 +1,4 @@
+<view>
+  <text class="hello">{{motto}}</text>
+  <button bindtap="clickMe">点击我</button>
+</view>
