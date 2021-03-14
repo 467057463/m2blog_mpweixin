@@ -1,4 +1,7 @@
 <view>
+  <view wx:for="{{array}}" wx:key="item">{{item}}</view>
   <text class="hello">{{motto}}</text>
-  <button bindtap="clickMe">点击我</button>
+  <button id="testTap" data-hi="hello" bindtap="clickMe">点击我</button>
+  <view wx:if="{{hasUserInfo}}">true</view>
+  <view wx:else>false</view>
 </view>

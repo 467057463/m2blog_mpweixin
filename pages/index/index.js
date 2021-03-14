@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    array: [1,2,3,4,5],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -17,7 +18,10 @@ Page({
       url: '../logs/logs'
     })
   },
-  clickMe(){
+  clickMe(event){
+    console.log(event)
+    console.log(getApp())
+    console.log(getCurrentPages())
     this.setData({
       motto: '1234567'
     })
